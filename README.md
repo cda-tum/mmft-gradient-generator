@@ -1,11 +1,17 @@
-# gradient-generator-gui
-Graphical User Interface (GUI) for the Gradient Generator tool.
+# MMFT Gradient Generator
+The [MMFT Gradient Generator](https://www.cda.cit.tum.de/research/microfluidics/gradient_generator/) allows users to automatically create designs for tree-shaped concentration gradient generators. Such devices are used to mix two fluids with different concentration values and provide various mixtures of these fluids (i.e., mixtures with certain concentration values) at corresponding outlets. It is developed as part of the [Munich Microfluidics Toolkit (MMFT)](https://www.cda.cit.tum.de/research/microfluidics/munich-microfluidics-toolkit/) by the [Chair for Design Automation](https://www.cda.cit.tum.de/) at the Technical University of Munich.
 
-# Getting Started with Create React App
+For more information, please check out the relevant research paper:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> G. Fink, T. Mitteramskogler, M. A. Hintermüller, B. Jakoby, and R. Wille. Automatic Design of Microfluidic Gradient Generators. IEEE Access, 2022.
 
-## Available Scripts
+> T. Mitteramskogler, G. Fink, M. Hintermüller, B. Jakoby, and R. Wille. Design Automation for Microfluidic Concentration Gradient Generators. In International Conference on Micro and Nano Engineering (MNE). 2021.
+
+## Usage
+
+The application is available on the [CDA webseite](https://www.cda.cit.tum.de/research/microfluidics/gradient_generator/).
+
+## Development Uasge
 
 In the project directory, you can run:
 
@@ -14,36 +20,6 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Builds the (optimized) app for production to the `build` folder.\
