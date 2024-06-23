@@ -3,7 +3,7 @@ The [MMFT Gradient Generator](https://www.cda.cit.tum.de/research/microfluidics/
 
 ![Example Gradient Generator Design](img/mf-gradient-generator.png?raw=true)
 
-For more information, please check out the relevant research paper:
+For more information, please check out the relevant research papers:
 
 > G. Fink, T. Mitteramskogler, M. A. Hintermüller, B. Jakoby, and R. Wille. Automatic Design of Microfluidic Gradient Generators. IEEE Access, 2022.
 
@@ -13,15 +13,15 @@ For more information, please check out the relevant research paper:
 
 The application is available on the [CDA webseite](https://www.cda.cit.tum.de/app/gradient-generator/).
 
-## Development Uasge
+## Development Usage
 
 In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm run build`
 
-Builds the (optimized) app for production to the `build` folder.\
+Builds the (optimized) app for production to the `build` folder.
