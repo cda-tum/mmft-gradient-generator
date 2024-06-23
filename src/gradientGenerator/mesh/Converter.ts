@@ -55,8 +55,11 @@ class Path {
                 //set new value of currentEdge
                 currentEdge = nextEdge;
 
+                const connectionPointVar = connectionPoint
+                const currentEdgeVar = currentEdge
+
                 //get nextEdge which is connected to the connectionPoint
-                nextEdge = edges.find(edge => edge.hasPoint(connectionPoint) && edge !== currentEdge);
+                nextEdge = edges.find(edge => edge.hasPoint(connectionPointVar) && edge !== currentEdgeVar);
             }
 
             //check if path is closed
