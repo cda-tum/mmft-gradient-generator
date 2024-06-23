@@ -29,10 +29,6 @@ export class Meander {
     private l1 = 0;
     private l2 = 0;
 
-    constructor() {
-
-    }
-
     setDimensions(dimensions: MeanderDimensions) {
         this.w = dimensions.w;
         this.radius = dimensions.radius;
@@ -55,7 +51,7 @@ export class Meander {
         this.createInlet();
 
         //create outlet
-        let isOutletFromRight = this.nArcs % 2 == 0;
+        let isOutletFromRight = this.nArcs % 2 === 0;
         this.createOutlet(isOutletFromRight);
 
         //create straight channels
@@ -141,20 +137,20 @@ export class Meander {
     private createArcs() {
         for (let i = 0; i < this.nArcs; i++) {
             let topChannel: Quad;
-            if (i == 0) {
+            if (i === 0) {
                 topChannel = this.inlet[2];
             } else {
                 topChannel = this.straightChannels[i - 1];
             }
 
             let bottomChannel: Quad;
-            if (i == this.nArcs - 1) {
+            if (i === this.nArcs - 1) {
                 bottomChannel = this.outlet[2];
             } else {
                 bottomChannel = this.straightChannels[i];
             }
 
-            if (i % 2 == 0) {
+            if (i % 2 === 0) {
                 this.createLeftArc(topChannel, bottomChannel);
             } else {
                 this.createRightArc(topChannel, bottomChannel);

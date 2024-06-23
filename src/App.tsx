@@ -1,4 +1,4 @@
-import { Alert, AlertColor, AppBar, Box, Button, Container, createTheme, Grid, IconButton, Paper, Slider, Stack, TextField, Toolbar, Tooltip, Typography } from '@mui/material';
+import { Alert, AlertColor, AppBar, Box, Button, Container, Grid, IconButton, Paper, Stack, TextField, Toolbar, Tooltip, Typography } from '@mui/material';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import DeleteIcon from '@mui/icons-material/Delete';
 import React from 'react';

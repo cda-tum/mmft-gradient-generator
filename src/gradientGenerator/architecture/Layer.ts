@@ -1,5 +1,3 @@
-import * as fs from "fs";
-import { convertToSVG } from "../mesh/Converter";
 import { Quad } from "../mesh/Quad";
 
 export class Layer {
@@ -59,7 +57,7 @@ export class Layer {
             //get left and right node of each channel
             let nodeLeft: Quad
             let nodeRight: Quad;
-            if (iChannel % 2 == 0) {
+            if (iChannel % 2 === 0) {
                 nodeLeft = this.outletNodes[iOutlet];
                 nodeRight = this.inletNodes[iInlet];
                 iOutlet++;

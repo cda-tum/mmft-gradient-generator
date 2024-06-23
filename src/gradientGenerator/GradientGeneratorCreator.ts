@@ -16,8 +16,6 @@ export class GradientGeneratorCreator {
     error = { id: '', message: '' };
     private gradientGenerator: GradientGenerator | undefined;
 
-    constructor() { }
-
     getTotalHeight(): number {
         if (this.gradientGenerator) {
             const lInletMax = this.inlets[0].l > this.inlets[1].l ? this.inlets[0].l : this.inlets[1].l;

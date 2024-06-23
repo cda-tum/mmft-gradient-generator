@@ -1,4 +1,3 @@
-import { Edge } from "../mesh/Edge";
 import { Point } from "../mesh/Point";
 import { Quad } from "../mesh/Quad";
 import { Layer } from "./Layer";
