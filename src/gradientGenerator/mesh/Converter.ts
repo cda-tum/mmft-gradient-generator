@@ -83,7 +83,7 @@ export function convertToSVG(quads: Quad[]): string {
         let equalEdges = allEdges.filter(edge => referenceEdge.equals(edge));
 
         //if only one equal edge was found (namely the reference edge itself) then a boundary edges was found
-        return equalEdges.length == 1;
+        return equalEdges.length === 1;
     });
     // let edges = getOnlySingletons<Edge>(allEdges);
 
@@ -122,7 +122,7 @@ function getSVGString(paths: Path[]): string {
     return content;
 }
 
-function getOnlySingletons<Type extends { equals(object: Type): boolean }>(allObjects: Type[]): Type[] {
+/*function getOnlySingletons<Type extends { equals(object: Type): boolean }>(allObjects: Type[]): Type[] {
     let singletons: Type[] = [];
 
     // loop through all objects
@@ -131,7 +131,7 @@ function getOnlySingletons<Type extends { equals(object: Type): boolean }>(allOb
         let occursOnce = true;
         for (const object of allObjects) {
             // do not compare identical objects
-            if (referenceObject == object) {
+            if (referenceObject === object) {
                 continue;
             }
 
@@ -149,4 +149,4 @@ function getOnlySingletons<Type extends { equals(object: Type): boolean }>(allOb
     }
 
     return singletons;
-}
+}*/

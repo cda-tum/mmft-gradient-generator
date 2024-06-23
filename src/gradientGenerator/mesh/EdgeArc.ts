@@ -83,7 +83,7 @@ export class EdgeArc extends Edge {
         // determinant of vectors (vEnd - vStart, vCenter - vStart)
         determinant = Math.sign((x2 - x1) * (yc - y1) - (y2 - y1) * (xc - x1));
         let largeArcFlag = determinant > 0.5 ? 0 : 1;
-        largeArcFlag = largeArcFlag == sweepFlag ? 1 : 0;
+        largeArcFlag = largeArcFlag === sweepFlag ? 1 : 0;
 
         return { r, sweepFlag, largeArcFlag };
     }

@@ -205,7 +205,7 @@ export class GradientGeneratorSolver {
     private indexMeanderMiddle(iLayer: number) {
         let nMeandersLayer = 3 + iLayer;
         let iMeander = Math.floor(nMeandersLayer / 2);
-        if (nMeandersLayer % 2 == 0) {
+        if (nMeandersLayer % 2 === 0) {
             iMeander -= 1;
         }
 
@@ -229,7 +229,7 @@ export class GradientGeneratorSolver {
             A[iRow++][this.indexMeander(iLayer, iMeander++)] = -1;
 
             // check if first layer because this layer is connected to the inlets and has to be treated differently
-            if (iLayer == 0) {
+            if (iLayer === 0) {
                 // first inlet node
                 A[iRow][this.indexInlet(0)] = 1;
                 A[iRow][this.indexConnection(iLayer, iConnection++)] = -1;
@@ -249,7 +249,7 @@ export class GradientGeneratorSolver {
                 let nNodes = 3 + 2 * iLayer;
                 for (let iNode = 0; iNode < nNodes; iNode++) {
                     // distinguish between meanders that are "inlets" or "outlets" (with respect to the current layer)
-                    if (iNode % 2 == 0) {
+                    if (iNode % 2 === 0) {
                         // "inlet" meanders
                         A[iRow][this.indexMeander(iLayer - 1, iMeander - 1)] = 1;
                         A[iRow][this.indexConnection(iLayer, iConnection++)] = -1;
@@ -356,7 +356,7 @@ export class GradientGeneratorSolver {
                 const connection1 = this.connections[iLayer][2 * iLoop + 1];    //top right connection inside the loop
                 let bi = connection0.q * connection0.r - connection1.q * connection1.r;
                 //last layer has to be treated differently, because meanders are connected to outlets
-                if (iLayer != this.nLayers - 1) {
+                if (iLayer !== this.nLayers - 1) {
                     const connection3 = this.connections[iLayer + 1][2 * iLoop + 1];    //bottom left connection inside the loop
                     const connection4 = this.connections[iLayer + 1][2 * iLoop + 2];    //bottom right connection inside the loop
                     bi += connection3.q * connection3.r - connection4.q * connection4.r;
@@ -446,7 +446,7 @@ export class GradientGeneratorSolver {
                 const connection1 = this.connections[iLayer][2 * iLoop + 1];    //top right connection inside the loop
                 let bi = connection0.q * connection0.r - connection1.q * connection1.r;
                 //last layer has to be treated differently, because meanders are connected to outlets
-                if (iLayer != this.nLayers - 1) {
+                if (iLayer !== this.nLayers - 1) {
                     const connection3 = this.connections[iLayer + 1][2 * iLoop + 1];    //bottom left connection inside the loop
                     const connection4 = this.connections[iLayer + 1][2 * iLoop + 2];    //bottom right connection inside the loop
                     bi += connection3.q * connection3.r - connection4.q * connection4.r;
@@ -519,10 +519,10 @@ export class GradientGeneratorSolver {
         let rMeanderMin = -1;
         for (let iMeander = 0; iMeander < rMsLayer.length; iMeander++) {
             let rMi = rMsLayer[iMeander][0];
-            if (rMi > rMeanderMax || rMeanderMax == -1) {
+            if (rMi > rMeanderMax || rMeanderMax === -1) {
                 rMeanderMax = rMi;
             }
-            if (rMi < rMeanderMin || rMeanderMin == -1) {
+            if (rMi < rMeanderMin || rMeanderMin === -1) {
                 rMeanderMin = rMi;
             }
 
@@ -559,10 +559,10 @@ export class GradientGeneratorSolver {
 
             let rMi = rMsLayer[iMeander][0];
             lDesired[iMeander] = rMi / rL;
-            if (rMi > rMeanderMax || rMeanderMax == -1) {
+            if (rMi > rMeanderMax || rMeanderMax === -1) {
                 rMeanderMax = rMi;
             }
-            if (rMi < rMeanderMin || rMeanderMin == -1) {
+            if (rMi < rMeanderMin || rMeanderMin === -1) {
                 rMeanderMin = rMi;
             }
 

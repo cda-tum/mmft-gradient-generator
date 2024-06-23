@@ -8,7 +8,7 @@ export class Point {
     }
 
     equals(point: Point): boolean {
-        return this.x == point.x && this.y == point.y;
+        return this.x === point.x && this.y === point.y;
     }
 
     close(point: Point, radius: number): boolean {
