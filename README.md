@@ -1,6 +1,6 @@
 # MMFT Gradient Generator
 
-<p style="text-align:center">
+<p align="center">
 <img src="https://www.cda.cit.tum.de/research/microfluidics/logo-microfluidics-toolkit.png" style="margin:auto;width:60%"/>
 </p>
 
