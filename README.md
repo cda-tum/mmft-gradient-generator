@@ -1,7 +1,8 @@
 # MMFT Gradient Generator
-<div style="text-align:center">
+
+<p style="text-align:center">
 <img src="https://www.cda.cit.tum.de/research/microfluidics/logo-microfluidics-toolkit.png" style="margin:auto;width:60%"/>
-</div>
+</p>
 
 The [MMFT Gradient Generator](https://www.cda.cit.tum.de/research/microfluidics/gradient_generator/) allows users to automatically create designs for tree-shaped concentration gradient generators. Such devices are used to mix two fluids with different concentration values and provide various mixtures of these fluids (i.e., mixtures with certain concentration values) at corresponding outlets. It is developed as part of the [Munich Microfluidics Toolkit (MMFT)](https://www.cda.cit.tum.de/research/microfluidics/munich-microfluidics-toolkit/) by the [Chair for Design Automation](https://www.cda.cit.tum.de/) at the Technical University of Munich.
 
