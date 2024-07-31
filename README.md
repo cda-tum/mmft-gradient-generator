@@ -16,9 +16,9 @@ If case you are using our tool in your work, we would be thankful if you referre
 
 ```bibtex
 @ARTICLE{fink2022automatic,
-	author={G. Fink and T. Mitteramskogler and M. A. Hinterm{\"u}ller and B. Jakoby and R. Wille},
-	title={Automatic Design of Microfluidic Gradient Generators},
-	journal={IEEE Access},
+    author={G. Fink and T. Mitteramskogler and M. A. Hinterm{\"u}ller and B. Jakoby and R. Wille},
+    title={Automatic Design of Microfluidic Gradient Generators},
+    journal={IEEE Access},
     volume={10},
     pages={28155--28164},
     year={2022},
