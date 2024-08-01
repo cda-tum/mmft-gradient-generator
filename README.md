@@ -45,7 +45,7 @@ If case you are using our tool in your work, we would be thankful if you referre
 }
 ```
 
-### Acknowledgment
+## Acknowledgment
 
 This work was supported in part by the BMK, BMDW, and the State of Upper Austria in the frame of the two FFG COMET Centers
 Software Competence Center Hagenberg (SCCH) and the Center for Symbiotic Mechatronics (of the Linz Center of Mechatronics, LCM);
