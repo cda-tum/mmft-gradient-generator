@@ -8,7 +8,27 @@ The [MMFT Gradient Generator](https://www.cda.cit.tum.de/research/microfluidics/
 
 ![Example Gradient Generator Design](img/mf-gradient-generator.png?raw=true)
 
-For more information, please check out the relevant research papers:
+## Usage
+
+The application is available on the [CDA webseite](https://www.cda.cit.tum.de/app/gradient-generator/).
+
+## Development Usage
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+### `npm run build`
+
+Builds the (optimized) app for production to the `build` folder.
+
+
+## References
+
+For more information, please check out the following research paper:
 
 > G. Fink, T. Mitteramskogler, M. A. Hintermüller, B. Jakoby, and R. Wille. Automatic Design of Microfluidic Gradient Generators. IEEE Access, 2022. [PDF](https://ieeexplore.ieee.org/document/9732435).
 
@@ -30,20 +50,3 @@ If case you are using our tool in your work, we would be thankful if you referre
 This work was supported in part by the BMK, BMDW, and the State of Upper Austria in the frame of the two FFG COMET Centers
 Software Competence Center Hagenberg (SCCH) and the Center for Symbiotic Mechatronics (of the Linz Center of Mechatronics, LCM);
 and in part by the FFG Project AUTOMATE under Project 890068.
-
-## Usage
-
-The application is available on the [CDA webseite](https://www.cda.cit.tum.de/app/gradient-generator/).
-
-## Development Usage
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-### `npm run build`
-
-Builds the (optimized) app for production to the `build` folder.
