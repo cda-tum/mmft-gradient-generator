@@ -1,4 +1,4 @@
-import { Grid, TextField, Paper, Typography, Stack } from '@mui/material';
+import { TextField, Paper, Typography, Stack } from '@mui/material';
 import React from "react";
 
 export interface InletParameters {

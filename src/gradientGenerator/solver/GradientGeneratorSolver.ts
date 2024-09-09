@@ -421,6 +421,7 @@ export class GradientGeneratorSolver {
 
     }
 
+    // @ts-expect-error
     private solveR2() {
         //solve resistances of meanders for each layer individually
         for (let iLayer = 0; iLayer < this.nLayers; iLayer++) {
@@ -543,6 +544,7 @@ export class GradientGeneratorSolver {
         return rMeanderMin > rMeanderMinRealizable;
     }
 
+    // @ts-expect-error
     private checkConditions2(rMsLayer: number[][], iLayer: number) {
         //unit resistance value (multiplied with a length gives the real resistance)
         const rL = this.rModel.computeResistance(this.w, this.h, 1.0);
